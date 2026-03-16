@@ -27,20 +27,37 @@
 
         'End If
 
-        If opcionUsuario = 1 Then
-            Console.WriteLine("Opción 1")
-            Console.ReadLine()
-        ElseIf opcionUsuario = 2 Then
-            Console.WriteLine("Opción 2")
-            Console.ReadLine()
-        ElseIf opcionUsuario = 3 Then
-            Console.WriteLine("Opción 3")
-            Console.ReadLine()
-        ElseIf opcionUsuario = 4 Then
-            Console.WriteLine("Seleccionó Salir")
-            Console.ReadLine()
-        End If
+        'If opcionUsuario = 1 Then
+        '    Console.WriteLine("Opción 1")
+        '    Console.ReadLine()
+        'ElseIf opcionUsuario = 2 Then
+        '    Console.WriteLine("Opción 2")
+        '    Console.ReadLine()
+        'ElseIf opcionUsuario = 3 Then
+        '    Console.WriteLine("Opción 3")
+        '    Console.ReadLine()
+        'ElseIf opcionUsuario = 4 Then
+        '    Console.WriteLine("Seleccionó Salir")
+        '    Console.ReadLine()
+        'End If
 
+        Select Case opcionUsuario
+            Case 1
+                Console.WriteLine("Opción 1")
+                Console.ReadLine()
+            Case 2
+                Console.WriteLine("Opción 2")
+                Console.ReadLine()
+            Case 3
+                Console.WriteLine("Opción 3")
+                Console.ReadLine()
+            Case 4
+                Console.WriteLine("Seleccionó Salir")
+                Console.ReadLine()
+            Case Else
+                Console.WriteLine("Opción no disponible")
+                Console.ReadLine()
+        End Select
     End Sub
 
 End Module
